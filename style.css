@@ -1,0 +1,141 @@
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color:navy;
+}
+.logo{
+    width:120px;
+}
+
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('images/bgimgs.jpg');
+    background-size:cover;
+    position:relative;
+}
+/* text css above bgmage*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: top;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+
+/* spacing on all sections */
+/* #about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+} */
+#contact {
+    padding-bottom: 4rem;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+    border: 5px solid #555;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#660080;
+}
+
+.tab-titles{
+    display:flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer;
+    position: relative;
+    color:#80004f;
+
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+.tab-contents ul li{
+    list-style:none;
+    margin:10px 0;
+}
+.tab-contents ul li span{
+    color: #0b8000;
+    font-size:14px;
+}
+.tab-contents{
+    display:none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* services section css */
+.servicesText.card {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    height: 300px;
+    width:300px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    
+    color:#800000;
+}
+.servicesText:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border: 5px solid #80004d;
+}
+.card{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border: 5px solid #80004d;
+}
+.card.button:hover {
+    background-color:#002ead;
+    transition: 0.7s;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-github:hover,.fa-instagram:hover,.fa-linkedin:hover {
+    color:yellow;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color:rgb(173, 230, 230);
+    text-align: center;
+}
